@@ -5,6 +5,7 @@
 #' @import shiny
 #' @noRd
 app_server <- function( input, output, session ) {
+  
   # List the first level callModules here
   output$selector <- renderUI({
     
@@ -16,3 +17,7 @@ app_server <- function( input, output, session ) {
     paste0('Why are you so ', input$selector, '!!')
   )
 }
+
+
+#libraries
+library(shinythemes)
