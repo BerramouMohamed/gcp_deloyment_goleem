@@ -9,7 +9,7 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    navbarPage("", id = "nav", theme = shinytheme("spacelab"),
+    navbarPage("", id = "nav", theme = shinythemes::shinytheme("spacelab"),
                
                # tabPanel("Données", icon = icon("database")),
                

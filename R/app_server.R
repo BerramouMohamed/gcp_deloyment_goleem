@@ -18,6 +18,3 @@ app_server <- function( input, output, session ) {
   )
 }
 
-
-#libraries
-library(shinythemes)
