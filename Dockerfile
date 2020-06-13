@@ -6,6 +6,7 @@ RUN R -e 'remotes::install_github("r-lib/remotes", ref = "97bbf81")'
 RUN Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3")'
 RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.4.0.2")'
 RUN R -e "install.packages('golem', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('shinythemes', repos='http://cran.rstudio.com/')"
 RUN mkdir /build_zone
 ADD . /build_zone
 WORKDIR /build_zone
